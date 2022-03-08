@@ -1,0 +1,60 @@
+@import '../utils/variables'
+
+.footer
+    background-color: #11111000
+    height: 15rem
+    display: flex
+    justify-content: center
+    color: $primaryFontColor
+    width: 100%
+
+.footerContainer
+    border-top: 1px solid white
+    width: 90%
+    display: flex
+    justify-content: center
+
+.footerSections
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.footerContent
+    display: flex
+    flex-direction: column
+
+.footerContentItem
+    display: flex
+    align-items: center
+    font-weight: 600
+    margin-bottom: 1rem
+
+.footerIcons
+    padding-right: 0.5rem
+
+.footerContentTitleSection
+    display: flex
+    align-items: center
+
+@media only screen and (max-width: 800px)
+
+    .footerContainer
+        flex-direction: column
+        align-content: flex-start
+
+    .footerContentTitle
+        font-size: 16px
+
+    .footerContentItem
+        font-size: 14px
+        flex-wrap: wrap
+
+    .footerIcons
+        font-size: 16px
+        padding-left: 1rem
+
+    .footerContent
+        flex-direction: row
+        align-items: baseline
+        justify-content: space-around

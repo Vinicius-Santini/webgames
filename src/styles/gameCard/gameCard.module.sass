@@ -1,0 +1,44 @@
+@import '../utils/variables'
+
+.card
+    width: 20rem
+    height: 28rem
+    display: flex
+    flex-direction: column
+    border-radius: 10px
+    cursor: pointer
+    color: $primaryFontColor
+    background: #2f2f35
+    margin-bottom: 3rem
+    margin-left: 1.5rem
+    margin-right: 1.5rem
+    box-shadow: 5px 2px 2px #131313
+
+    &:hover
+        background-color: #2726269d
+        transform: scale(1.1)
+
+.cardImage
+    border-radius: 10px 10px 0px 0px
+    z-index: 0
+
+.cardInfo
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-shadow: 0 -10px 10px -8px #131313
+    z-index: 2
+
+.ratingSection
+    display: flex
+    font-weight: 600
+    align-items: center
+
+.ratingIcon
+    padding-right: 0.5rem
+
+.genresSection
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 2rem
